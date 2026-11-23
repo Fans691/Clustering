@@ -28,3 +28,6 @@ sudo -u postgres pg_basebackup \
 
 # Demarrer le slave
 sudo pg_ctlcluster 16 slave start
+
+# Verifier les clusters
+pg_lsclusters

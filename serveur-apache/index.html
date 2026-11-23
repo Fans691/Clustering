@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Choisir un serveur</title>
+    <title>Load Balancer - Round Robin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
-        <h1>Choisissez un serveur</h1>
-        <p>Sélectionnez le serveur dont vous souhaitez afficher le résultat.</p>
+        <h1>HAProxy - Load Balancer</h1>
+        <p>Le trafic est reparti automatiquement entre les serveurs en <strong>Round Robin</strong>.</p>
         <div class="servers">
             <section class="server">
-                <h2>Apache</h2>
-                <a href="/apache/a.html">Afficher Apache</a>
+                <h2>Serveur Apache</h2>
+                <span class="badge">Port 80</span>
             </section>
             <section class="server">
-                <h2>Tomcat</h2>
-                <a href="/tomcat/a.html">Afficher Tomcat</a>
+                <h2>Serveur Tomcat</h2>
+                <span class="badge">Port 8080</span>
             </section>
         </div>
+        <a href="/a.html" class="btn-primary">Acceder au site (Round Robin)</a>
+        <p class="hint">Rechargez plusieurs fois pour voir l'alternance entre les serveurs.</p>
     </main>
 </body>
 
